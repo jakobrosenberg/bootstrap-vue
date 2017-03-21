@@ -1,6 +1,6 @@
 <template>
     <div :class="['form-group','row',inputState]" v-if="enabled">
-        <label :for="for_id" v-if="label" :class="['col-form-label',labelLayout]" v-html="label"/>
+        <label :for="for_id" v-if="label" :class="['col-form-label',labelLayout]" v-html="label"></label>
         <div :class="inputLayout">
             <slot></slot>
             <div class="form-text text-muted" v-if="feedback" v-html="feedback"></div>
